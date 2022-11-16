@@ -16,7 +16,7 @@ function App() {
     localStorage.setItem("my-data", JSON.stringify(data));
   });
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=12585434db32732055c534824be5a420`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid={APIkey}`;
 
   const searchLocation = (event) => {
     if (event.key === "Enter") {
